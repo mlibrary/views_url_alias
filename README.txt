@@ -3,7 +3,6 @@ CONTENTS OF THIS FILE
 ---------------------
 
  * Introduction
- * Requirements
  * Installation
  * Related Issues
  * Notes
@@ -24,29 +23,16 @@ URL alias.
 Currently, only node aliases are supported.
 
 
-REQUIREMENTS
-------------
-
-- Views 3.x: Create customized lists and queries from your database.
-  http://drupal.org/project/views
-
-
 INSTALLATION
 ------------
 
-1. Copy/upload the view_url_alias.module to the sites/all/modules directory
+1. Copy/upload the view_url_alias_node.module to the modules directory
    of your Drupal installation.
 
 2. Enable the 'Views URL alias {type}' module in 'Modules'. (admin/modules)
 
-3. Create or view and select 'Node: URL alias' for the field or filter
+3. Create or view and select 'URL alias' for the field or filter
 
-
-RELATED ISSUES
---------------
-
-- Path (alias) integration
-  http://drupal.org/node/257046
 
 
 NOTES
@@ -70,3 +56,5 @@ AUTHOR/MAINTAINER
 
 - Jacob Rockowitz
   http://drupal.org/user/371407
+- Kyay Rindlisbacher
+  https://www.drupal.org/u/l-four
