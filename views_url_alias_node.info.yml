@@ -1,7 +1,7 @@
 name: Views URL alias (Node)
 type: module
 description: Allows node-related Views be filtered by path aliases.
-core: 8.x
+core_version_requirement: ^8 || ^9
 package: Views
 dependencies:
   - path
