@@ -1,0 +1,25 @@
+{
+    "name": "drupal/views_url_alias",
+    "description": "Allows node-related Views be filtered by path aliases.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Jacob Rockowitz (rockowij)",
+            "homepage": "https://www.drupal.org/u/jrockowitz",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Kyah Rindlisbacher (L-four)",
+            "homepage": "https://www.drupal.org/u/l-four",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Eric Sod (esod)",
+            "email": "esod124@gmail.com"
+        }
+    ],
+    "require": {
+        "drupal/core": "^8 || ^9"
+    }
+}
