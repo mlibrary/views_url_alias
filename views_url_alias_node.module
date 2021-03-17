@@ -170,8 +170,8 @@ function views_url_alias_node_rebuild() {
   // Build select query for insert.
   $query = $database->select('url_alias', 'ua');
   $query->join('node', 'n', "CONCAT('/node/', n.nid) = ua.source");
-  $query->fields('n', array('nid'))
-    ->fields('ua', array('alias'));
+  $query->fields('n', ['nid'])
+    ->fields('ua', ['alias']);
 
   // Populate view_url_alias_node table.
   try {
@@ -183,5 +183,5 @@ function views_url_alias_node_rebuild() {
   }
 
   // Display message
-  drupal_set_message( t('The %table table has been successfully rebuilt.', array('%table' => 'views_url_alias_node')) );
+  \Drupal::messenger()->addStatus(t('The %table table has been successfully rebuilt.', ['%table' => 'views_url_alias_node']));
 }
