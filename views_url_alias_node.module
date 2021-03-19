@@ -168,10 +168,10 @@ function views_url_alias_node_rebuild() {
   $database->truncate('views_url_alias_node')->execute();
 
   // Build select query for insert.
-  $query = $database->select('url_alias', 'ua');
-  $query->join('node', 'n', "CONCAT('/node/', n.nid) = ua.source");
+  $query = $database->select('path_alias', 'pa');
+  $query->join('node', 'n', "CONCAT('/node/', n.nid) = pa.path");
   $query->fields('n', ['nid'])
-    ->fields('ua', ['alias']);
+    ->fields('pa', ['alias']);
 
   // Populate view_url_alias_node table.
   try {
