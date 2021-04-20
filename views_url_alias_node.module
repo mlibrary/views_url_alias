@@ -77,8 +77,7 @@ function views_url_alias_node_form_path_alias_delete_submit($form, FormStateInte
   $build_info = $form_state->getBuildInfo();
   if (isset($build_info['args'][0])) {
     $alias_id = $build_info['args'][0];
-    /** @var \Drupal\Core\Path\AliasStorage $alias_storage */
-    $alias_storage = \Drupal::service('path.alias_storage');
+    $alias_storage = \Drupal::entityTypeManager()->getStorage('path_alias');
     $alias = $alias_storage->load([
       'pid' => $alias_id,
     ]);
