@@ -1,9 +1,10 @@
 name: Views URL alias (Node)
 type: module
 description: Allows node-related Views be filtered by path aliases.
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: Views
 dependencies:
   - path
+  - drupal:path (>=8.8)
   - views
 project: views_url_alias_node
